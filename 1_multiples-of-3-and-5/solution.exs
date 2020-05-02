@@ -1,5 +1,5 @@
 defmodule Solution do
-  def iterate(acc, sum, num) when acc <= num do
+  def iterate(acc, sum, num) when acc < num do
     conditions_matched = Integer.mod(acc, 3) == 0 || Integer.mod(acc, 5) == 0
 
     case conditions_matched do
